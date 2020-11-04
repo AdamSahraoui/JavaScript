@@ -40,3 +40,15 @@ function age() {
 
 
 }
+
+function setNewImage(){
+
+document.getElementById("img1").src="../exoJS/assets/photoexo/photo2.jpg";
+
+}
+
+function setOldImage(){
+
+  document.getElementById("img1").src="../exoJS/assets/photoexo/photo1.jpg";
+
+}
