@@ -21,9 +21,9 @@ function displayAlert(){
 
 function sendData(){ 
 
-    var pointure= document.getElementById("pointure").value;
-    var naissance= document.getElementById("naissance").value; 
-    resultat = (((((pointure * 2) + 5)* 50) - naissance) + 1769) ;
+    var shoeSize= document.getElementById("shoeSize").value;
+    var birthDate= document.getElementById("birthDate").value; 
+    var resultat = (((((shoeSize * 2) + 5)* 50) - birthDate) + 1769);
     
     alert("Le resultat est : " + resultat);
   }
@@ -32,10 +32,10 @@ function sendData(){
 function age() {
     var old= document.getElementById("old").value;
 
-    if(old>18)
+    if(old>=18)
     alert("Vous êtes majeur");
 
-    if(old<18)
+    else
     alert("Vous êtes mineur");
 
 
@@ -52,3 +52,10 @@ function setOldImage(){
   document.getElementById("img1").src="../exoJS/assets/photoexo/photo1.jpg";
 
 }
+
+function myFunction(){
+  var dificult= document.getElementById("dificult").value;
+  
+  alert(dificult)
+}
+
